@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>SHIFA Gate</title>
+    <!-- fav icon-->
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="imgs/favicon.ico" type="image/x-icon"/>
+    <!-- Font Cairo-->
+    <link href="https://fonts.googleapis.com/css?family=Cairo:400,700,900&amp;display=swap" rel="stylesheet"/>
+    <!-- Font Awesome Icon V5-->
+    <link rel="stylesheet" href="css/fontawesomeAll.min.css"/>
+    <!--bootstarp V4-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css"/>
+    <!-- Main style-->
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <!-- Start Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container"><a class="navbar-brand" href="home.html"> <img src="imgs/logo.png" alt=""/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto main-list">
+            <li class=" nav-item "><a class="nav-link" href="home.html">الرئيسية</a></li>
+            <li class="nav-item  active"><a class="nav-link" href="Charts.html">المخططات</a></li>
+            <li class=" nav-item "><a class="nav-link" href="land.html">اراضي</a></li>
+            <li class=" nav-item "><a class="nav-link" href="Customer.html">المشتري</a></li>
+            <li class=" nav-item "><a class="nav-link" href="requests.html">قائمة الطلبات</a></li>
+            <li class=" nav-item "><a class="nav-link" href="Seller.html">قائمة البائعين</a></li>
+            <li class=" nav-item "><a class="nav-link" href="settings.html">إعدادات الموقع</a></li>
+          </ul>
+          <ul class="navbar-nav mr-2 my-lg-0 main-exit">
+            <li class="nav-item"><a class="nav-link" href="#">تحديث البيانات <i class="fas fa-sync-alt"> </i></a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html"> خروج <i class="fas fa-sign-out-alt fa-flip-horizontal"> </i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Start newCharts-->
+    <section class="newCharts">
+      <div class="container">
+        <h2 class="text-center text-white font-weight-bold">مخطط جديد</h2>
+        <div class="row justify-content-center box-bg">
+          <div class="col-lg-8">
+            <div class="box-newCharts">
+              <!--Form Save-->
+              <form>
+                <h4>البيانات الأساسية </h4>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">اسم المخطط</label>
+                  <input class="form-control form-control-lg" id="exampleInputEmail1" type="text"/>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">عنوان المخطط</label>
+                  <input class="form-control form-control-lg" id="exampleInputEmail1" type="text"/>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">مميزات المخطط</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button class="btn-success btn-lg btn-block">حفظ</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="image-upload">
+              <div class="form-group main-upload">
+                <label for="">صورة المخطط</label>
+                <input class="file" type="file" name="img[]"/>
+                <div class="input-group"><span class="input-group-btn">
+                    <button class="browse btn btn-info input-lg" type="button"><i class="glyphicon glyphicon-search"></i> إختر الملف</button></span>
+                  <input class="form-control input-lg" type="text" disabled="" placeholder="ارفع الصورة"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">صور أخرى للمخطط</label>
+                <input class="file" type="file" name="img[]"/>
+                <div class="input-group"><span class="input-group-btn">
+                    <button class="browse btn btn-info input-lg" type="button"><i class="glyphicon glyphicon-search"></i> إختر الملف</button></span>
+                  <input class="form-control input-lg" type="text" disabled="" placeholder="ارفع الصورة"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <input class="file" type="file" name="img[]"/>
+                <div class="input-group"><span class="input-group-btn">
+                    <button class="browse btn btn-info input-lg" type="button"><i class="glyphicon glyphicon-search"></i> إختر الملف</button></span>
+                  <input class="form-control input-lg" type="text" disabled="" placeholder="ارفع الصورة"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <input class="file" type="file" name="img[]"/>
+                <div class="input-group"><span class="input-group-btn">
+                    <button class="browse btn btn-info input-lg" type="button"><i class="glyphicon glyphicon-search"></i> إختر الملف</button></span>
+                  <input class="form-control input-lg" type="text" disabled="" placeholder="ارفع الصورة"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <input class="file" type="file" name="img[]"/>
+                <div class="input-group"><span class="input-group-btn">
+                    <button class="browse btn btn-info input-lg" type="button"><i class="glyphicon glyphicon-search"></i> إختر الملف</button></span>
+                  <input class="form-control input-lg" type="text" disabled="" placeholder="ارفع الصورة"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <input class="file" type="file" name="img[]"/>
+                <div class="input-group"><span class="input-group-btn">
+                    <button class="browse btn btn-info input-lg" type="button"><i class="glyphicon glyphicon-search"></i> إختر الملف  </button></span>
+                  <input class="form-control input-lg" type="text" disabled="" placeholder="ارفع الصورة"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Customer-->
+    <!-- jQuery first, then Bootstrap JS , Main JS-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/autosize.min.js"></script>
+    <script>
+      autosize($('textarea'));
+      $(document).on('click', '.browse', function(){
+        var file = $(this).parent().parent().parent().find('.file');
+        file.trigger('click');
+      });
+      $(document).on('change', '.file', function(){
+        $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+      });
+    </script>
+  </body>
+</html>

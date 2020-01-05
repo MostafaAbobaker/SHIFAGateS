@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>SHIFA Gate</title>
+    <!-- fav icon-->
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="imgs/favicon.ico" type="image/x-icon"/>
+    <!-- Font Cairo-->
+    <link href="https://fonts.googleapis.com/css?family=Cairo:400,700,900&amp;display=swap" rel="stylesheet"/>
+    <!-- Font Awesome Icon V5-->
+    <link rel="stylesheet" href="css/fontawesomeAll.min.css"/>
+    <!--bootstarp V4-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css"/>
+    <!-- Main style-->
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <!-- Start Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container"><a class="navbar-brand" href="home.html"> <img src="imgs/logo.png" alt=""/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto main-list">
+            <li class=" nav-item "><a class="nav-link" href="home.html">الرئيسية</a></li>
+            <li class="nav-item  active"><a class="nav-link" href="Charts.html">المخططات</a></li>
+            <li class=" nav-item "><a class="nav-link" href="land.html">اراضي</a></li>
+            <li class=" nav-item "><a class="nav-link" href="Customer.html">المشتري</a></li>
+            <li class=" nav-item "><a class="nav-link" href="requests.html">قائمة الطلبات</a></li>
+            <li class=" nav-item "><a class="nav-link" href="Seller.html">قائمة البائعين</a></li>
+            <li class=" nav-item "><a class="nav-link" href="settings.html">إعدادات الموقع</a></li>
+          </ul>
+          <ul class="navbar-nav mr-2 my-lg-0 main-exit">
+            <li class="nav-item"><a class="nav-link" href="#">تحديث البيانات <i class="fas fa-sync-alt"> </i></a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html"> خروج <i class="fas fa-sign-out-alt fa-flip-horizontal"> </i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Start users-->
+    <section class="infoCharts">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="button text-center"><a class="btn btn-success btn-lg mx-5 my-2" href="newCharts.html"> اضف بلوك</a><a class="btn btn-secondary btn-lg mx-5 my-2" href=""> قائمة المبيعات </a><a class="btn btn-warning btn-lg mx-5 my-2" href=""> قائمة المتاحة</a></div>
+            <div class="card bg-light">  
+              <div class="card-header text-center">قائمة البلوكات</div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text bg-primary text-white" id="basic-addon3">اسم المخطط	</span></div>
+                      <input class="form-control" id="basic-url" type="text" aria-describedby="basic-addon3" placeholder="مخطط بوابة الشفا المرحلة الثانية" readonly="readonly"/>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text bg-primary text-white" id="basic-addon3">عنوان المخطط</span></div>
+                      <input class="form-control" id="basic-url" type="text" aria-describedby="basic-addon3" placeholder="مخطط بوابة الشفا" readonly="readonly"/>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text bg-primary text-white" id="basic-addon3">مميزات المخطط	</span></div>
+                      <input class="form-control" id="basic-url" type="text" aria-describedby="basic-addon3" placeholder="مخطط بوابة الشفا" readonly="readonly"/>
+                    </div>
+                  </div>
+                </div>
+                <table class="table table-responsive-md table-sm table-bordered text-center table-striped" id="makeEditable">
+                  <thead>
+                    <tr>
+                      <td>#</td>
+                      <th class="text-center">رقم البلوك	</th>
+                      <th class="text-center">الإستعمال</th>
+                      <th class="text-center">عدد قطع السكني	</th>
+                      <th class="text-center">مساحة السكني الإجمالية	</th>
+                      <th class="text-center">عدد قطع التجاري	</th>
+                      <th class="text-center">مساحة التجاري الإجمالية	</th>
+                      <th class="text-center">سعر البلوك	</th>
+                      <th class="text-center">حالة البلوك	</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="#">1</td>
+                      <td data-label="رقم البلوك">3</td>
+                      <td data-label="الإستعمال">تجاري</td>
+                      <td data-label="عدد قطع السكني	"> 	&nbsp;</td>
+                      <td data-label="مساحة السكني الإجمالية	">	&nbsp; </td>
+                      <td data-label="عدد قطع التجاري"> 	&nbsp;</td>
+                      <td data-label="مساحة التجاري الإجمالية"> 	&nbsp;</td>
+                      <td data-label="سعر البلوك	"> 	&nbsp;</td>
+                      <td class="bg-success text-white" data-label="حالة البلوك">متاح</td>
+                    </tr>
+                    <tr>
+                      <td data-label="#">2</td>
+                      <td data-label="رقم البلوك">142</td>
+                      <td data-label="الإستعمال">سكنى</td>
+                      <td data-label="عدد قطع السكني	"> 	&nbsp;	&nbsp;</td>
+                      <td data-label="مساحة السكني الإجمالية	"> 	&nbsp;	&nbsp;</td>
+                      <td data-label="عدد قطع التجاري"> 	&nbsp;	&nbsp;</td>
+                      <td data-label="مساحة التجاري الإجمالية"> 	&nbsp;	&nbsp;</td>
+                      <td data-label="سعر البلوك	"> 	&nbsp;	&nbsp;</td>
+                      <td class="bg-success text-white" data-label="حالة البلوك">متاح</td>
+                    </tr>
+                    <tr>
+                      <td data-label="#">3</td>
+                      <td data-label="رقم البلوك">9</td>
+                      <td data-label="الإستعمال">سكني و تجاري</td>
+                      <td data-label="عدد قطع السكني	"> 	&nbsp;</td>
+                      <td data-label="مساحة السكني الإجمالية	">	&nbsp; </td>
+                      <td data-label="عدد قطع التجاري"> 	&nbsp;</td>
+                      <td data-label="مساحة التجاري الإجمالية">	&nbsp; </td>
+                      <td data-label="سعر البلوك	"> 	&nbsp;</td>
+                      <td class="bg-success text-white" data-label="حالة البلوك">متاح</td>
+                    </tr>
+                    <tr>
+                      <td data-label="#">4</td>
+                      <td data-label="رقم البلوك">3</td>
+                      <td data-label="الإستعمال">تجاري</td>
+                      <td data-label="عدد قطع السكني	">	&nbsp;  </td>
+                      <td data-label="مساحة السكني الإجمالية	">	&nbsp;  </td>
+                      <td data-label="عدد قطع التجاري"> 	&nbsp; </td>
+                      <td data-label="مساحة التجاري الإجمالية">	&nbsp; </td>
+                      <td data-label="سعر البلوك	"> 	&nbsp; </td>
+                      <td class="bg-success text-white" data-label="حالة البلوك">متاح</td>
+                    </tr>
+                    <tr>
+                      <td data-label="#">5</td>
+                      <td data-label="رقم البلوك">112</td>
+                      <td data-label="الإستعمال">سكني</td>
+                      <td data-label="عدد قطع السكني	">	&nbsp;  </td>
+                      <td data-label="مساحة السكني الإجمالية	">  	&nbsp;</td>
+                      <td data-label="عدد قطع التجاري"> 	&nbsp;</td>
+                      <td data-label="مساحة التجاري الإجمالية"> 	&nbsp;</td>
+                      <td data-label="سعر البلوك	"> 	&nbsp;</td>
+                      <td class="bg-success text-white" data-label="حالة البلوك">متاح</td>
+                    </tr>
+                    <tr>
+                      <td data-label="#">6</td>
+                      <td data-label="رقم البلوك">18</td>
+                      <td data-label="الإستعمال">سكني و تجاري	</td>
+                      <td data-label="عدد قطع السكني	"> 	&nbsp;</td>
+                      <td data-label="مساحة السكني الإجمالية	"> 	&nbsp;</td>
+                      <td data-label="عدد قطع التجاري"> 	&nbsp;</td>
+                      <td data-label="مساحة التجاري الإجمالية"> 	&nbsp;</td>
+                      <td data-label="سعر البلوك	"> 	&nbsp;</td>
+                      <td class="bg-success text-white" data-label="حالة البلوك">متاح</td>
+                    </tr>
+                    <tr>
+                      <td data-label="#">7</td>
+                      <td data-label="رقم البلوك">135</td>
+                      <td data-label="الإستعمال">سكنى</td>
+                      <td data-label="عدد قطع السكني	"> 	&nbsp;</td>
+                      <td data-label="مساحة السكني الإجمالية	"> 	&nbsp;</td>
+                      <td data-label="عدد قطع التجاري"> 	&nbsp;</td>
+                      <td data-label="مساحة التجاري الإجمالية"> 	&nbsp;</td>
+                      <td data-label="سعر البلوك	"> 	&nbsp;</td>
+                      <td class="bg-success text-white" data-label="حالة البلوك">متاح</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- jQuery first, then Bootstrap JS , Main JS-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstable.js"></script>
+    <script>$('#makeEditable').SetEditable({ $addButton: $('#but_add') });</script>
+  </body>
+</html>

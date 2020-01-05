@@ -1,0 +1,149 @@
+@media print {
+  body {
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0;
+    text-align: right;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin: 30px auto;
+}
+
+@media print {
+  #nav-tabContent .tab-pane {
+    display: block;
+  }
+  #nav-tabContent .fade:not(.show) {
+    opacity: 1;
+  }
+  #nav-tabContent h4 {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #nav-tabContent #list-settings {
+    margin: 30px 0;
+  }
+  #nav-tabContent #list-settings form {
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+  #nav-tabContent #list-settings form h4 {
+    display: block;
+    width: 100%;
+  }
+  #nav-tabContent #list-settings form .form-group {
+    display: none;
+  }
+  #nav-tabContent #list-settings form .image-one {
+    width: 50%;
+    height: 100px;
+  }
+  #nav-tabContent #list-settings form .image-one img {
+    height: 100%;
+  }
+  #nav-tabContent #list-settings form .image-two {
+    width: 50%;
+  }
+  #nav-tabContent #list-settings form .image-two img {
+    width: 50%;
+  }
+  #nav-tabContent #list-resolution h4 {
+    display: none;
+  }
+  #nav-tabContent #list-resolution .form-group {
+    display: flex;
+  }
+  #nav-tabContent #list-resolution .form-group label {
+    width: 10%;
+  }
+  #nav-tabContent #list-resolution .form-group .form-control {
+    width: 20%;
+    border: none;
+  }
+  #nav-tabContent #list-image .image-photo {
+    margin-bottom: 20px;
+  }
+  #nav-tabContent #list-image .image-photo h4 {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #nav-tabContent #list-image .image-photo a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+  #nav-tabContent #list-image .image-photo a img {
+    height: 150px;
+  }
+  #nav-tabContent #list-messages .chick {
+    margin-right: 30px;
+  }
+  #nav-tabContent #list-messages h6 {
+    margin-right: 30px;
+  }
+  #nav-tabContent #list-messages #sig-image {
+    width: 200px;
+  }
+  #nav-tabContent #list-messages .sing-right {
+    display: inline-flex;
+  }
+  #nav-tabContent #list-messages .sing-left {
+    display: inline-flex !important;
+    float: left;
+  }
+  #nav-tabContent #list-messages .sing-left #sig-mang {
+    width: 200px;
+  }
+  #nav-tabContent #sig-canvas {
+    display: none;
+  }
+  #nav-tabContent #sig-submitBtn {
+    display: none;
+  }
+  #nav-tabContent #sig-clearBtn {
+    display: none;
+  }
+  #nav-tabContent .button-print {
+    display: none;
+  }
+  #nav-tabContent #sig-dataUrl {
+    display: none;
+  }
+  #nav-tabContent .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+  #nav-tabContent .form-row .col-md-6 {
+    width: 33.3333336%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #nav-tabContent .form-row .col-md-6 label {
+    width: 40%;
+  }
+  #nav-tabContent .form-row .col-md-6 .form-control {
+    width: 60%;
+  }
+  #nav-tabContent .form-row .col-md-6 .custom-select {
+    width: 60%;
+  }
+}
+
+/*# sourceMappingURL=myprint.css.map */

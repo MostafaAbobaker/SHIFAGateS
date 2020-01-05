@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>SHIFA Gate</title>
+    <!-- fav icon-->
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="imgs/favicon.ico" type="image/x-icon"/>
+    <!-- Font Cairo-->
+    <link href="https://fonts.googleapis.com/css?family=Cairo:400,700,900&amp;display=swap" rel="stylesheet"/>
+    <!-- Font Awesome Icon V5-->
+    <link rel="stylesheet" href="css/fontawesomeAll.min.css"/>
+    <!--bootstarp V4-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css"/>
+    <!-- Main style-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+  </head>
+  <body class="user-body">
+    <!-- Start Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container"><a class="navbar-brand" href="home.html"> <img src="imgs/logo.png" alt=""/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto main-list">
+            <li class=" nav-item "><a class="nav-link" href="home.html">الرئيسية</a></li>
+            <li class="nav-item  active"><a class="nav-link" href="Charts.html">المخططات</a></li>
+            <li class=" nav-item "><a class="nav-link" href="land.html">اراضي</a></li>
+            <li class=" nav-item "><a class="nav-link" href="Customer.html">المشتري</a></li>
+            <li class=" nav-item "><a class="nav-link" href="requests.html">قائمة الطلبات</a></li>
+            <li class=" nav-item "><a class="nav-link" href="Seller.html">قائمة البائعين</a></li>
+            <li class=" nav-item "><a class="nav-link" href="settings.html">إعدادات الموقع</a></li>
+          </ul>
+          <ul class="navbar-nav mr-2 my-lg-0 main-exit">
+            <li class="nav-item"><a class="nav-link" href="#">تحديث البيانات <i class="fas fa-sync-alt"> </i></a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html"> خروج <i class="fas fa-sign-out-alt fa-flip-horizontal"> </i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Start users-->
+    <section class="Blockdetails">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="row box-bg">
+              <div class="col-lg-3">
+                <div class="list-group" id="list-tab" role="tablist"><a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">تفاصيل البلوك</a><a class="list-group-item list-group-item-action" id="list-image-list" data-toggle="list" href="#list-image" role="tab" aria-controls="image">صور البلوك</a><a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">معلومات المشتري</a><a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">السندات المرفقة</a><a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">إقرار المشترى</a><a class="list-group-item list-group-item-action" id="list-resolution-list" data-toggle="list" href="#list-resolution" role="tab" aria-controls="resolution">قرار الإدارة</a></div>
+              </div>
+              <div class="col-lg-9">
+                <div class="tab-content" id="nav-tabContent">
+                  <!-- Start List One-->
+                  <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"> 
+                    <form>
+                      <h4>تفاصيل البلوك</h4>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail4">رقم البلوك	</label>
+                          <select class="custom-select">
+                            <option selected=""> </option>
+                            <option value="1">1 </option>
+                            <option value="2">9</option>
+                            <option value="3">115</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="">اسم المخطط	</label>
+                          <input class="form-control" type="text" readonly="readonly"/>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail4">	عنوان المخطط</label>
+                          <input class="form-control" type="text" readonly="readonly"/>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="">الإستعمال</label>
+                          <input class="form-control" type="text"/>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail4">	سعر بلكات	</label>
+                          <input class="form-control" type="text" value="ريال"/>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="">القيمه المضافه</label>
+                          <input class="form-control" type="text" value="ريال"/>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail4">	السعي	</label>
+                          <input class="form-control" type="text" value="ريال"/>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="">الاجمالى </label>
+                          <input class="form-control" type="text" value="ريال"/>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail4">	عدد القطع السكنية	</label>
+                          <input class="form-control" type="text"/>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="">مساحة السكني الإجمالية	</label>
+                          <input class="form-control" type="text"/>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail4">	عدد قطع التجارية		</label>
+                          <input class="form-control" type="text"/>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="">مساحة التجاري الإجمالية	 </label>
+                          <input class="form-control" type="text"/>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Start List Two  -->
+                  <div class="tab-pane fade" id="list-image" role="tabpanel" aria-labelledby="list-image-list"> 
+                    <div class="image-photo">
+                      <h4>صور البلوك</h4><a data-fancybox="gallery" href="imgs/1.png"><img src="imgs/1.png"/></a>
+                    </div>
+                  </div>
+                  <!-- Start List Three  -->
+                  <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"> 
+                    <form>
+                      <h4>معلومات المشتري</h4>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="">اسم المشتري	</label>
+                          <input class="form-control" type="text" value="12345566666"/>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail4">	رقم الهوية</label>
+                          <input class="form-control" type="text" value="12344565789999922"/>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail4">	رقم الجوال	</label>
+                          <input class="form-control" type="text" value="1213456789999"/>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Start List Five-->
+                  <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list"> 
+                    <form>
+                      <h4>السندات المرفقة</h4>
+                      <div class="form-group">
+                        <label for="">صورة الهوية</label>
+                        <input class="file" type="file" name="img[]"/>
+                        <div class="input-group"><span class="input-group-btn">
+                            <button class="browse btn btn-info input-lg" type="button"><i class="glyphicon glyphicon-search"></i> إختر الملف</button></span>
+                          <input class="form-control input-lg" type="text" disabled="" placeholder="ارفع الصورة"/>
+                        </div>
+                      </div>
+                      <div class="image-one"><img src="imgs/1.png" alt=""/></div>
+                      <div class="form-group">
+                        <label for="">صورة الشيك</label>
+                        <input class="file" type="file" name="img[]"/>
+                        <div class="input-group"><span class="input-group-btn">
+                            <button class="browse btn btn-info input-lg" type="button"><i class="glyphicon glyphicon-search"></i> إختر الملف</button></span>
+                          <input class="form-control input-lg" type="text" disabled="" placeholder="ارفع الصورة"/>
+                        </div>
+                      </div>
+                      <div class="image-two"><img src="imgs/bg.png" alt=""/></div>
+                    </form>
+                  </div>
+                  <!-- Start List Four-->
+                  <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"> 
+                    <form>
+                      <h4>إقرار</h4>
+                      <p class="lead">&quot;	أتعهد بأنني قمت بمراجعة جميع القوانين و اللوائح الخاصة بالعمل، والتزم بها إلتزاما كاملا و سأقوم بتنفيذ كل الأوامر و التعليمات الت &quot;</p>
+                      <label class="form-check-label my-3" for="exampleCheck1">
+                        <input class="form-check-input" id="exampleCheck1" type="checkbox"/>
+                        <spna class="chick">نعم أتعهد</spna>
+                      </label>
+                      <!--Start Signature-->
+                      <div class="row">
+                        <div class="col-md-12">
+                          <canvas id="sig-canvas" width="620" height="160">Get a better browser, bro.</canvas>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12 my-3"><span class="btn btn-primary" id="sig-submitBtn">تأكيد الامضاء</span><span class="btn btn-outline-danger mr-3" id="sig-clearBtn">مسح الشاشه </span></div>
+                      </div>
+                      <div class="row tt">
+                        <div class="col-md-12">
+                          <textarea class="form-control" id="sig-dataUrl" rows="5">Data URL for your signature will go here!</textarea>
+                        </div>
+                      </div>
+                      <div class="row sing-right">
+                        <div class="col-md-12 my-3">
+                          <h6>توقيع المشترى</h6><img id="sig-image" src="" alt="توقيعك سوف يظهر هنا!"/>
+                        </div>
+                      </div>
+                      <div class="row sing-left d-none">
+                        <div class="col-md-12 my-3">
+                          <h6>توقيع الإدارة </h6><img id="sig-mang" src="imgs/screen-6.jpg"/>
+                        </div>
+                      </div>
+                      <div class="row button-print">
+                        <div class="col-3"><span class="btn btn-outline-dark btn-block btn-lg" onclick="myprint()"> <i class="fas fa-print"></i> طباعة البيانات </span></div>
+                        <div class="col-9">
+                          <button class="btn btn-success btn-block btn-lg">حفظ البيانات</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Start List Six  -->
+                  <div class="tab-pane fade" id="list-resolution" role="tabpanel" aria-labelledby="list-resolution-list"> 
+                    <form>
+                      <h4>قرار الإدارة</h4>
+                      <div class="form-group col-md-6 float-none">
+                        <label for="">  اسم البائع : 	</label>
+                        <input class="form-control" type="text" value="محمود احمد" readonly="readonly"/>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- jQuery first, then Bootstrap JS , Main JS-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/Signature.js"></script>
+    <script src="js/printThis.js"></script>
+    <script>
+      function myprint() {
+        $('#nav-tabContent').printThis({
+            importCSS: true,            
+            importStyle: false,
+            printContainer: true,
+            loadCSS: ["css/bootstrap.min.css","css/bootstrap-rtl.min.css", "css/myprint.css"],
+            header: "<h1>مخطط بوابة الشفا - الرياض-المرحله الثانيه</h1>"
+        });
+      }
+      
+      $(document).on('click', '.browse', function(){
+        var file = $(this).parent().parent().parent().find('.file');
+        file.trigger('click');
+      });
+      $(document).on('change', '.file', function(){
+        $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+      });
+    </script>
+  </body>
+</html>
