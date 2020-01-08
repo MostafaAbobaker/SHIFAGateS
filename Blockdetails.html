@@ -18,6 +18,7 @@
     <!-- Main style-->
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/myprint.css"/>
   </head>
   <body class="user-body">
     <!-- Start Nav Bar -->
@@ -48,7 +49,7 @@
           <div class="col-lg-12">
             <div class="row box-bg">
               <div class="col-lg-3">
-                <div class="list-group" id="list-tab" role="tablist"><a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">تفاصيل البلوك</a><a class="list-group-item list-group-item-action" id="list-image-list" data-toggle="list" href="#list-image" role="tab" aria-controls="image">صور البلوك</a><a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">معلومات المشتري</a><a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">السندات المرفقة</a><a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">إقرار المشترى</a><a class="list-group-item list-group-item-action" id="list-resolution-list" data-toggle="list" href="#list-resolution" role="tab" aria-controls="resolution">قرار الإدارة</a></div>
+                <div class="list-group" id="list-tab" role="tablist"><a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">تفاصيل البلوك</a><a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">معلومات المشتري</a><a class="list-group-item list-group-item-action" id="list-image-list" data-toggle="list" href="#list-image" role="tab" aria-controls="image">صور البلوك</a><a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">السندات المرفقة</a><a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">إقرار المشترى</a><a class="list-group-item list-group-item-action" id="list-resolution-list" data-toggle="list" href="#list-resolution" role="tab" aria-controls="resolution">قرار الإدارة</a></div>
               </div>
               <div class="col-lg-9">
                 <div class="tab-content" id="nav-tabContent">
@@ -113,12 +114,6 @@
                       </div>
                     </form>
                   </div>
-                  <!-- Start List Two  -->
-                  <div class="tab-pane fade" id="list-image" role="tabpanel" aria-labelledby="list-image-list"> 
-                    <div class="image-photo">
-                      <h4>صور البلوك</h4><a data-fancybox="gallery" href="imgs/1.png"><img src="imgs/1.png"/></a>
-                    </div>
-                  </div>
                   <!-- Start List Three  -->
                   <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"> 
                     <form>
@@ -138,6 +133,12 @@
                         </div>
                       </div>
                     </form>
+                  </div>
+                  <!-- Start List Two  -->
+                  <div class="tab-pane fade" id="list-image" role="tabpanel" aria-labelledby="list-image-list"> 
+                    <div class="image-photo">
+                      <h4>صور البلوك</h4><a data-fancybox="gallery" href="imgs/1.png"><img src="imgs/1.png"/></a>
+                    </div>
                   </div>
                   <!-- Start List Five-->
                   <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list"> 
@@ -236,7 +237,7 @@
             importStyle: false,
             printContainer: true,
             loadCSS: ["css/bootstrap.min.css","css/bootstrap-rtl.min.css", "css/myprint.css"],
-            header: "<h1>مخطط بوابة الشفا - الرياض-المرحله الثانيه</h1>"
+            header: "<h3>مخطط بوابة الشفا - الرياض-المرحله الثانيه</h3>"
         });
       }
       

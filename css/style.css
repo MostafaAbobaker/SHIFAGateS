@@ -387,6 +387,7 @@
   padding: 20px 0;
   display: block;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 .category .category-box .category-body .part i {
   transition: all 0.3s ease-in-out;
@@ -398,6 +399,16 @@
 .category .category-box .category-body .part:nth-child(2) {
   border-right: 1px solid #444;
   border-left: 1px solid #444;
+}
+.category .category-box .category-body .part.ful-width {
+  width: 100%;
+}
+.category .category-box .category-body .part.ful-width:hover {
+  text-shadow: 2px 5px 20px rgba(0, 0, 0, 0.8);
+  transform: scale(1.4, 1.4);
+}
+.category .category-box .category-body .part.ful-width:hover i {
+  transform: scale(1, 1);
 }
 .category .category-box:hover {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);

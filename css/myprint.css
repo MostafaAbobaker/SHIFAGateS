@@ -6,9 +6,12 @@
     margin: 0;
     text-align: right;
   }
+  body .col-lg-3 {
+    display: none;
+  }
 }
 
-h1 {
+h3 {
   text-align: center;
   margin: 30px auto;
 }
@@ -105,6 +108,12 @@ h1 {
   #nav-tabContent #list-messages .sing-left #sig-mang {
     width: 200px;
   }
+  #nav-tabContent #list-messages .form-check-label {
+    margin: 5px;
+  }
+  #nav-tabContent #list-messages .row {
+    margin-top: -5px;
+  }
   #nav-tabContent #sig-canvas {
     display: none;
   }
@@ -130,19 +139,23 @@ h1 {
     width: 33.3333336%;
     position: relative;
     min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid #333;
+    border-collapse: collapse;
   }
   #nav-tabContent .form-row .col-md-6 label {
     width: 40%;
   }
   #nav-tabContent .form-row .col-md-6 .form-control {
     width: 60%;
+    border: none;
   }
   #nav-tabContent .form-row .col-md-6 .custom-select {
     width: 60%;
+    border: none;
   }
 }
 
